@@ -21,7 +21,7 @@ import org.osgi.service.metatype.annotations.AttributeType;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.osgi.service.metatype.annotations.Option;
 
-@ObjectClassDefinition(name="Annotation Demo Service - OSGi")
+@ObjectClassDefinition(name = "Annotation Demo Service - OSGi")
 public @interface Configuration {
 
     @AttributeDefinition(

@@ -36,13 +36,14 @@ import com.nateyolles.aem.osgiannotationdemo.core.services.SampleOsgiService;
 
 @Component(
     immediate = true,
-    service=Servlet.class,
-    property={
+    service = Servlet.class,
+    property = {
         "sling.servlet.extensions=txt",
         "sling.servlet.paths=/bin/osgi",
         "sling.servlet.paths=/bin/foo",
         "sling.servlet.methods=get"
-    }
+    },
+    configurationPid = "com.nateyolles.aem.osgiannotationdemo.core.servlets.SampleOsgiServlet"
 )
 @Designate(ocd=SampleOsgiServlet.Configuration.class)
 public class SampleOsgiServlet extends SlingSafeMethodsServlet {
@@ -71,7 +72,7 @@ public class SampleOsgiServlet extends SlingSafeMethodsServlet {
         enabled = config.enabled();
     }
 
-    @ObjectClassDefinition(name="Annotation Demo Servlet - OSGi")
+    @ObjectClassDefinition(name = "Annotation Demo Servlet - OSGi")
     public @interface Configuration {
         @AttributeDefinition(
             name = "Enable",

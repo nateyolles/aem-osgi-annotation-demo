@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory;
     //     "scheduler.concurrent:Boolean=false"
     // }
 )
-@Designate(ocd=SampleOsgiScheduledTask.Configuration.class)
+@Designate(ocd = SampleOsgiScheduledTask.Configuration.class)
 public class SampleOsgiScheduledTask implements Runnable {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
