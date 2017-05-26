@@ -6,6 +6,8 @@ Examples are given for both annotation styles in each of a servlet, service, fil
 
 Note the service example creates the Configuration as a separate class while the other examples create the Configuration as a subclass.
 
+View the associated blog post at [http://www.nateyolles.com/blog/2017/05/osgi-declarative-services-annotations-in-aem](http://www.nateyolles.com/blog/2017/05/osgi-declarative-services-annotations-in-aem).
+
 ## How to build
 
 This project has been built and tested in AEM 6.2.
